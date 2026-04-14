@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- VBK logo — navy + yellow branding -->
+  <circle cx="60" cy="60" r="56" fill="#1A2C6B" stroke="#F5C300" stroke-width="4"/>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="#F5C300" stroke-width="2"/>
+  <text x="60" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#F5C300">VBK</text>
+  <text x="60" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#F5C300">1912</text>
+  <path d="M30 85 Q60 100 90 85" stroke="#F5C300" stroke-width="2" fill="none"/>
+</svg>
