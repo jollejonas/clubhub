@@ -97,7 +97,7 @@ export default function BlivMedlemPage() {
       <div className="max-w-5xl mx-auto px-4 py-12 flex flex-col gap-16">
         {/* MembershipTiers */}
         <section>
-          <h2 className="text-2xl font-bold text-center mb-8" style={{ color: "var(--club-primary)" }}>
+          <h2 className="text-2xl font-bold text-center mb-8" style={{ color: "var(--club-secondary)" }}>
             Vælg Medlemskab
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
@@ -126,7 +126,7 @@ export default function BlivMedlemPage() {
                   )}
                   <div
                     className="text-2xl font-bold mb-0.5"
-                    style={{ color: "var(--club-primary)" }}
+                    style={{ color: "var(--club-secondary)" }}
                   >
                     {tier.price === 0 ? "Gratis" : `${tier.price} kr`}
                   </div>
@@ -144,7 +144,7 @@ export default function BlivMedlemPage() {
                     style={
                       isSelected
                         ? { backgroundColor: "var(--club-primary)", color: "var(--club-secondary)" }
-                        : { border: "1.5px solid var(--club-primary)", color: "var(--club-primary)" }
+                        : { border: "1.5px solid var(--club-primary)", color: "var(--club-secondary)" }
                     }
                   >
                     {isSelected ? "Valgt" : "Vælg"}
@@ -157,7 +157,7 @@ export default function BlivMedlemPage() {
 
         {/* WhyJoin */}
         <section>
-          <h2 className="text-2xl font-bold text-center mb-8" style={{ color: "var(--club-primary)" }}>
+          <h2 className="text-2xl font-bold text-center mb-8" style={{ color: "var(--club-secondary)" }}>
             Hvorfor blive medlem?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -199,7 +199,7 @@ export default function BlivMedlemPage() {
             className="rounded-2xl border p-8 max-w-2xl mx-auto"
             style={{ backgroundColor: "var(--club-surface)", borderColor: "var(--club-border)" }}
           >
-            <h2 className="text-2xl font-bold mb-6" style={{ color: "var(--club-primary)" }}>
+            <h2 className="text-2xl font-bold mb-6" style={{ color: "var(--club-secondary)" }}>
               Udfyld tilmeldingsformular
             </h2>
 
@@ -385,7 +385,7 @@ export default function BlivMedlemPage() {
                   />
                   <label htmlFor="gdpr" className="text-sm" style={{ color: "var(--club-textMuted)" }}>
                     Jeg accepterer, at {clubConfig.shortName} gemmer mine oplysninger i henhold til{" "}
-                    <a href="/privatlivspolitik" className="underline" style={{ color: "var(--club-primary)" }}>
+                    <a href="/privatlivspolitik" className="underline" style={{ color: "var(--club-secondary)" }}>
                       privatlivspolitikken
                     </a>
                     . <span style={{ color: "var(--club-loss)" }}>*</span>
@@ -406,7 +406,7 @@ export default function BlivMedlemPage() {
 
         {/* FAQ */}
         <section className="max-w-2xl mx-auto w-full">
-          <h2 className="text-2xl font-bold mb-6" style={{ color: "var(--club-primary)" }}>
+          <h2 className="text-2xl font-bold mb-6" style={{ color: "var(--club-secondary)" }}>
             Ofte stillede spørgsmål
           </h2>
           <div className="flex flex-col gap-2">
@@ -421,7 +421,7 @@ export default function BlivMedlemPage() {
                   style={{ color: "var(--club-text)", backgroundColor: "var(--club-surface)" }}
                 >
                   {item.q}
-                  <span className="ml-4 text-lg leading-none" style={{ color: "var(--club-primary)" }}>
+                  <span className="ml-4 text-lg leading-none" style={{ color: "var(--club-secondary)" }}>
                     +
                   </span>
                 </summary>

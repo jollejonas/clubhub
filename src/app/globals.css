@@ -25,8 +25,8 @@
 
   /* Typography */
   --font-sans:    var(--font-inter), system-ui, sans-serif;
-  --font-heading: var(--font-barlow-condensed), Arial Narrow, Arial, sans-serif;
-  --font-accent:  var(--font-barlow), Arial, sans-serif;
+  --font-heading: var(--font-share), "Share", Arial, sans-serif;
+  --font-accent:  var(--font-parisienne), "Parisienne", "Monotype Corsiva", cursive;
   --font-mono:    var(--font-jetbrains-mono), monospace;
 
   /* Font size scale */
@@ -48,8 +48,14 @@
   --text-score--line-height: 1;
 }
 
+/*
+  Contrast note: --color-primary (#f5c400 yellow) has insufficient contrast on
+  white backgrounds and vice versa. Never use yellow text on white or white text
+  on yellow. Use --color-secondary (#0a0f1e) text on yellow, or yellow on dark.
+*/
+
 body {
-  background: var(--club-background, #F5F5F5);
+  background: var(--club-background, #ffffff);
   color: var(--club-text, #111111);
   font-family: var(--font-sans);
 }

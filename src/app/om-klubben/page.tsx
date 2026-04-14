@@ -45,7 +45,7 @@ export default function OmKlubbenPage() {
       <div className="container mx-auto px-4 py-12 flex flex-col gap-16 max-w-5xl">
         {/* ClubHistory */}
         <section>
-          <h2 className="text-heading-md font-bold text-primary mb-6">Klubbens Historie</h2>
+          <h2 className="text-heading-md font-bold text-secondary mb-6">Klubbens Historie</h2>
           <p className="text-body-lg leading-relaxed mb-8 max-w-3xl">
             {clubConfig.name} ({clubConfig.shortName}) er en dansk fodboldklub grundlagt i {clubConfig.founded} i
             hjertet af Vorbasse. Gennem mere end 100 år har vi samlet lokale spillere og familier om det smukke spil.
@@ -67,14 +67,14 @@ export default function OmKlubbenPage() {
 
         {/* BoardSection */}
         <section>
-          <h2 className="text-heading-md font-bold text-primary mb-6">Bestyrelsen</h2>
+          <h2 className="text-heading-md font-bold text-secondary mb-6">Bestyrelsen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {boardMembers.map((member) => (
               <div
                 key={member.name}
                 className="bg-surface border border-club-border rounded-xl p-6 text-center flex flex-col items-center gap-3"
               >
-                <div className="w-16 h-16 rounded-full bg-primary/20 text-primary font-bold text-heading-sm flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-primary/20 text-secondary font-bold text-heading-sm flex items-center justify-center">
                   {initials(member.name)}
                 </div>
                 <div>
@@ -84,7 +84,7 @@ export default function OmKlubbenPage() {
                 {member.email && (
                   <a
                     href={`mailto:${member.email}`}
-                    className="text-body-sm text-primary hover:underline"
+                    className="text-body-sm text-secondary hover:underline"
                   >
                     {member.email}
                   </a>
@@ -96,7 +96,7 @@ export default function OmKlubbenPage() {
 
         {/* DocumentsSection */}
         <section>
-          <h2 className="text-heading-md font-bold text-primary mb-4">Klub-dokumenter</h2>
+          <h2 className="text-heading-md font-bold text-secondary mb-4">Klub-dokumenter</h2>
           <div className="border border-club-border rounded-lg divide-y divide-club-border">
             {documents.map((doc) => (
               <div
@@ -110,7 +110,7 @@ export default function OmKlubbenPage() {
                     <span className="ml-2 text-body-sm text-club-muted">({doc.note})</span>
                   )}
                 </div>
-                <span className="text-body-sm text-primary font-medium">Download →</span>
+                <span className="text-body-sm text-secondary font-medium">Download →</span>
               </div>
             ))}
           </div>
@@ -118,7 +118,7 @@ export default function OmKlubbenPage() {
 
         {/* ContactSection */}
         <section>
-          <h2 className="text-heading-md font-bold text-primary mb-6">Kontakt os</h2>
+          <h2 className="text-heading-md font-bold text-secondary mb-6">Kontakt os</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Contact info */}
             <div className="bg-surface rounded-xl p-8 border border-club-border flex flex-col gap-4">
@@ -131,7 +131,7 @@ export default function OmKlubbenPage() {
               {clubConfig.email && (
                 <div className="flex gap-3 items-start">
                   <span className="text-xl">✉️</span>
-                  <a href={`mailto:${clubConfig.email}`} className="text-primary hover:underline text-body-md">
+                  <a href={`mailto:${clubConfig.email}`} className="text-secondary hover:underline text-body-md">
                     {clubConfig.email}
                   </a>
                 </div>
@@ -143,7 +143,7 @@ export default function OmKlubbenPage() {
                     href={clubConfig.social.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:underline text-body-md"
+                    className="text-secondary hover:underline text-body-md"
                   >
                     Facebook
                   </a>

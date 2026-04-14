@@ -243,14 +243,14 @@ export default function HomePage() {
             >
               <span
                 className="text-body-sm font-bold uppercase tracking-widest font-heading"
-                style={{ color: "var(--club-primary)" }}
+                style={{ color: "var(--club-secondary)" }}
               >
                 Træningstider
               </span>
               <Link
                 href="/hold"
                 className="text-body-sm font-medium transition-opacity hover:opacity-70"
-                style={{ color: "var(--club-primary)" }}
+                style={{ color: "var(--club-secondary)" }}
               >
                 Alle hold →
               </Link>
@@ -283,7 +283,7 @@ export default function HomePage() {
                       {isToday && (
                         <span
                           className="text-body-sm font-semibold"
-                          style={{ color: "var(--club-primary)" }}
+                          style={{ color: "var(--club-secondary)" }}
                         >
                           I dag
                         </span>
@@ -340,8 +340,8 @@ export default function HomePage() {
       {clubConfig.features.news && (
         <section className="container mx-auto px-4 py-10">
           <div className="flex items-center justify-between mb-5">
-            <h2 className="text-heading-md font-bold text-primary">Seneste Nyheder</h2>
-            <Link href="/nyheder" className="text-body-sm text-primary hover:underline font-medium">
+            <h2 className="text-heading-md font-bold text-secondary">Seneste Nyheder</h2>
+            <Link href="/nyheder" className="text-body-sm text-secondary hover:underline font-medium">
               Se alle →
             </Link>
           </div>
@@ -361,7 +361,7 @@ export default function HomePage() {
                   </span>
                   <h3 className="text-heading-sm font-semibold line-clamp-2">{article.title}</h3>
                   <p className="text-body-sm text-club-muted line-clamp-2">{article.excerpt}</p>
-                  <p className="text-body-sm text-primary font-medium mt-auto">Læs mere →</p>
+                  <p className="text-body-sm text-secondary font-medium mt-auto">Læs mere →</p>
                 </div>
               </Link>
             ))}

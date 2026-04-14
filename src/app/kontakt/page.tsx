@@ -21,7 +21,7 @@ export default function KontaktPage() {
         <p className="text-body-lg text-club-muted mb-8">
           Du er altid velkommen til at kontakte os — vi svarer hurtigst muligt.
           Du kan også besøge vores{" "}
-          <Link href="/om-klubben" className="text-primary hover:underline">Om Klubben</Link>
+          <Link href="/om-klubben" className="text-secondary hover:underline">Om Klubben</Link>
           {" "}side for mere information.
         </p>
 
@@ -38,7 +38,7 @@ export default function KontaktPage() {
             {clubConfig.email && (
               <div className="flex gap-3">
                 <span className="text-xl flex-shrink-0">✉️</span>
-                <a href={`mailto:${clubConfig.email}`} className="text-primary hover:underline text-body-md">
+                <a href={`mailto:${clubConfig.email}`} className="text-secondary hover:underline text-body-md">
                   {clubConfig.email}
                 </a>
               </div>
@@ -50,7 +50,7 @@ export default function KontaktPage() {
                   href={clubConfig.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary hover:underline text-body-md"
+                  className="text-secondary hover:underline text-body-md"
                 >
                   Facebook
                 </a>

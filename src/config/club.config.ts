@@ -11,16 +11,16 @@ export const clubConfig: ClubConfig = {
   logoPath:    "/clubs/vbk/logo.png",
   faviconPath: "/clubs/vbk/favicon.ico",
   colors: {
-    primary:        "#F5C300", // VBK yellow
-    primaryDark:    "#C9A100",
-    primaryLight:   "#FDE97A",
-    secondary:      "#1A2C6B", // VBK navy
-    secondaryDark:  "#0F1A42",
-    secondaryLight: "#2A3F8F",
-    accent:         "#F5C300",
-    background:     "#FFFFFF",
-    surface:        "#F7F7F7",
-    text:           "#111827",
+    primary:        "#f5c400", // VBK yellow — avoid yellow-on-white and white-on-yellow (low contrast)
+    primaryDark:    "#d4a900",
+    primaryLight:   "#fde97a",
+    secondary:      "#0a0f1e", // VBK midnight navy
+    secondaryDark:  "#060b15",
+    secondaryLight: "#1a2440",
+    accent:         "#f5c400",
+    background:     "#ffffff",
+    surface:        "#f9f9f9",
+    text:           "#111111",
     textMuted:      "#4B5563",
     border:         "#D1D5DB",
     success:        "#2E7D32",

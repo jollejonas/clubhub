@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Barlow_Condensed, Barlow } from "next/font/google";
+import { Inter, JetBrains_Mono, Share, Parisienne } from "next/font/google";
 import type { CSSProperties } from "react";
 import { clubConfig } from "@/config/club.config";
 import Nav from "@/components/Nav";
@@ -18,17 +18,19 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const barlowCondensed = Barlow_Condensed({
-  variable: "--font-barlow-condensed",
+// Share Bold — primary heading font for VBK (replaces Barlow Condensed)
+const share = Share({
+  variable: "--font-share",
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
+  weight: ["400", "700"],
   display: "swap",
 });
 
-const barlow = Barlow({
-  variable: "--font-barlow",
+// Parisienne — free alternative to Monotype Corsiva; decorative/accent script
+const parisienne = Parisienne({
+  variable: "--font-parisienne",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400"],
   display: "swap",
 });
 
@@ -70,7 +72,7 @@ export default function RootLayout({
   return (
     <html
       lang="da"
-      className={`${inter.variable} ${jetbrainsMono.variable} ${barlowCondensed.variable} ${barlow.variable} h-full antialiased`}
+      className={`${inter.variable} ${jetbrainsMono.variable} ${share.variable} ${parisienne.variable} h-full antialiased`}
       style={clubVars}
     >
       <body className="min-h-full flex flex-col bg-background text-club-text">

@@ -38,7 +38,7 @@ export default function NyhederPage() {
                 )}
                 <div className="flex items-center justify-between mt-auto pt-2">
                   <span className="text-body-sm text-club-muted">{article.publishedAt}</span>
-                  <span className="text-body-sm text-primary font-medium">Læs mere →</span>
+                  <span className="text-body-sm text-secondary font-medium">Læs mere →</span>
                 </div>
               </div>
             </Link>

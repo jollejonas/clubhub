@@ -90,7 +90,7 @@ export default function KampProgramPage() {
             return (
               <div key={key}>
                 <div className="sticky top-28 bg-background border-b border-club-border py-2 mb-4">
-                  <span className="text-heading-sm font-bold text-primary uppercase tracking-wide">
+                  <span className="text-heading-sm font-bold text-secondary uppercase tracking-wide">
                     {monthLabel.charAt(0).toUpperCase() + monthLabel.slice(1)}
                   </span>
                 </div>
@@ -104,7 +104,7 @@ export default function KampProgramPage() {
                       >
                         {/* DateBlock */}
                         <div className="w-16 text-center bg-background border border-club-border rounded-lg p-2 flex-shrink-0">
-                          <div className="text-heading-md text-primary font-bold leading-none">{dt.num}</div>
+                          <div className="text-heading-md text-secondary font-bold leading-none">{dt.num}</div>
                           <div className="text-body-sm text-club-muted">{dt.month}</div>
                         </div>
 
@@ -113,7 +113,7 @@ export default function KampProgramPage() {
                           <div className="flex items-center gap-2 flex-wrap">
                             <span className="font-semibold text-body-md">{match.homeTeam}</span>
                             {match.isPlayed ? (
-                              <span className="font-mono text-score font-bold text-primary">
+                              <span className="font-mono text-score font-bold text-secondary">
                                 {match.homeScore} – {match.awayScore}
                               </span>
                             ) : (
@@ -140,7 +140,7 @@ export default function KampProgramPage() {
 
         {/* LeagueTable */}
         <div>
-          <h2 className="text-heading-md font-bold text-primary mb-4">Stilling — Senior Herrer</h2>
+          <h2 className="text-heading-md font-bold text-secondary mb-4">Stilling — Senior Herrer</h2>
           <div className="overflow-x-auto rounded-lg border border-club-border">
             <table className="w-full text-body-sm">
               <thead>
@@ -169,7 +169,7 @@ export default function KampProgramPage() {
                     <td className="px-3 py-2">{row.mf}</td>
                     <td className="px-3 py-2">{row.mm}</td>
                     <td className="px-3 py-2">{row.diff > 0 ? `+${row.diff}` : row.diff}</td>
-                    <td className="px-3 py-2 font-bold text-primary">{row.pts}</td>
+                    <td className="px-3 py-2 font-bold text-secondary">{row.pts}</td>
                   </tr>
                 ))}
               </tbody>

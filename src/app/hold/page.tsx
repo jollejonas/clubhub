@@ -23,7 +23,7 @@ export default function HoldPage() {
               style={{ borderColor: "var(--club-border)", borderLeftColor: "var(--club-primary)" }}
             >
               <div className="font-semibold text-lg">{team.name}</div>
-              <div className="text-sm mt-1 text-primary">
+              <div className="text-sm mt-1 text-club-muted">
                 {team.ageGroup} · {team.gender === "men" ? "Herrer" : team.gender === "women" ? "Damer" : "Mixed"}
               </div>
             </Link>

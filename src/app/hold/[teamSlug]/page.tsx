@@ -14,10 +14,10 @@ export default async function TeamPage({ params }: Props) {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
-      <Link href="/hold" className="text-sm mb-6 block hover:underline" style={{ color: "var(--club-primary)" }}>
+      <Link href="/hold" className="text-sm mb-6 block hover:underline" style={{ color: "var(--club-secondary)" }}>
         ← Alle hold
       </Link>
-      <h1 className="text-4xl font-bold mb-4" style={{ color: "var(--club-primary)" }}>
+      <h1 className="text-4xl font-bold mb-4" style={{ color: "var(--club-secondary)" }}>
         {team.name}
       </h1>
       <p style={{ color: "var(--club-textMuted)" }}>
